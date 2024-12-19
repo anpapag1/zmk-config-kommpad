@@ -1,4 +1,2 @@
-# No whitespace after the comma or in your keyboard name!
 config SHIELD_KOMMPAD
     def_bool $(shields_list_contains,kommpad)
-
