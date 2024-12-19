@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     kscan0: kscan0 {
@@ -25,9 +25,8 @@
         pin-b = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
         resolution = <4>;
     };
-    
 
     chosen {
         zmk,physical-layout = &kommpad_physical_layout;
-    }
+    };
 };
