@@ -28,5 +28,6 @@
 
     chosen {
         zmk,physical-layout = &kommpad_physical_layout;
+        zmk,matrix_transform = &default_transform;
     };
 };
