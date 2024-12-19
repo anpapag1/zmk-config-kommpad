@@ -1,0 +1,78 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,matrix_transform = &default_transform;
+    };
+
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <3>;
+        rows = <2>;
+        map = <
+            RC(0,0) RC(0,1) RC(0,2)
+            RC(1,0) RC(1,1) RC(1,2)
+        >;
+    };
+
+    zmk,layouts {
+        compatible = "zmk,layouts";
+
+        default_layout: layout {
+            label = "KommPad";
+            rows = <2>;
+            columns = <3>;
+            sensors = <1>;
+
+            // Define the physical layout of the macro pad
+            layout {
+                // First row
+                key_1 {
+                    row = <0>;
+                    col = <0>;
+                    x = <0>;
+                    y = <0>;
+                };
+                key_2 {
+                    row = <0>;
+                    col = <1>;
+                    x = <1>;
+                    y = <0>;
+                };
+                key_3 {
+                    row = <0>;
+                    col = <2>;
+                    x = <2>;
+                    y = <0>;
+                };
+
+                // Second row
+                key_4 {
+                    row = <1>;
+                    col = <0>;
+                    x = <0>;
+                    y = <1>;
+                };
+                key_5 {
+                    row = <1>;
+                    col = <1>;
+                    x = <1>;
+                    y = <1>;
+                };
+                key_6 {
+                    row = <1>;
+                    col = <2>;
+                    x = <2>;
+                    y = <1>;
+                };
+
+                // Rotary encoder
+                encoder_1 {
+                    index = <0>;
+                    x = <3>;
+                    y = <0>;
+                };
+            };
+        };
+    };
+};
