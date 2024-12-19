@@ -7,9 +7,9 @@
             // |     Z     |     M     |     K     |
             // |     A     |     B     |     C     |
             bindings = <
-                &kp Z    &kp M    &kp K
-                &kp A    &kp B    &kp C
+                &kp Z    &kp M    &kp K    
+                &kp A    &kp B    &kp C    
             >;
         };
     };
- };
+};
