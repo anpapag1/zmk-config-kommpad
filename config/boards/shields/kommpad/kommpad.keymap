@@ -15,7 +15,7 @@
 
         BT {
             bindings = <
-&trans  &trans  &bootloader
+&studio_unlock  &bt BT_CLR_ALL  &bootloader
 &bt BT_SEL 0    &bt BT_SEL 1    &trans
             >;
         };
