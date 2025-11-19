@@ -1,0 +1,6 @@
+if SHIELD_KOMMPAD
+
+config ZMK_KEYBOARD_NAME
+    default "KommPad"
+
+endif

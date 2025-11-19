@@ -15,8 +15,13 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp X
-                &kp Z
+                &kp X &kp Z
+            >;
+        };
+        bt_layer {
+            display-name = "Default Layer";
+            bindings = <
+                &bt BT_CLR &bootloader
             >;
         };
     };
