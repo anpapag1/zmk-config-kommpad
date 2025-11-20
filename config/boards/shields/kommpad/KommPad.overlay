@@ -50,7 +50,7 @@
 
 &pro_micro_i2c {
     status = "okay";
-    clock-frequency = <I2C_BITRATE_FAST>;
+    clock-frequency = <I2C_BITRATE_STANDARD>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
@@ -61,9 +61,6 @@
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
         prechargep = <0x22>;
     };
 };
