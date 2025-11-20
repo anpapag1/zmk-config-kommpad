@@ -15,15 +15,15 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp X   &mo 1
-                &kp A   &kp B
+                &kp X  
+                &to 1   
             >;
         };
         bt_layer {
             display-name = "Bluetooth";
             bindings = <
-                &none       &bootloader
-                &bt BT_CLR  &kp A
+                &kp Y       
+                &to 0
             >;
         };
     };
