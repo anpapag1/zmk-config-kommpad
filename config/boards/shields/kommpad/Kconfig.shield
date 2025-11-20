@@ -1,2 +1,2 @@
 config SHIELD_KOMMPAD
-    def_bool $(shields_list_contains, KommPad)
+    def_bool $(shields_list_contains,KommPad)
