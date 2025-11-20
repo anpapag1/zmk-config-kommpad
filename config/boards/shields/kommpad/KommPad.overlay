@@ -6,6 +6,7 @@
         zmk,kscan = &default_kscan;
         zmk,physical-layout = &default_physical_layout;
         zmk,display = &oled;
+        zephyr,display = &oled;
     };
 
     default_kscan: kscan {
