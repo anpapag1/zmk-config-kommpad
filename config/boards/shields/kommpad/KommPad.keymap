@@ -22,8 +22,8 @@
         bt_layer {
             display-name = "Bluetooth";
             bindings = <
-                &none       &trans
-                &bt BT_CLR  &bootloader
+                &none       &bootloader
+                &bt BT_CLR  &kp A
             >;
         };
     };
