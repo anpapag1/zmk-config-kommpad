@@ -5,7 +5,6 @@
     chosen {
         zmk,kscan = &default_kscan;
         zmk,physical-layout = &default_physical_layout;
-        zmk,studio-unlock-on-start;
         zephyr,display = &oled;
     };
 
@@ -62,6 +61,8 @@
         multiplex-ratio = <31>;
         segment-remap;
         com-invdir;
+        com-sequential;
+        inversion-on;
         prechargep = <0x22>;
     };
 };
