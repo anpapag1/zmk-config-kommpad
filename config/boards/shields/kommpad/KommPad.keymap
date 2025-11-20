@@ -15,7 +15,17 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp X &kp Z
+                &kp X   &kp Y   &mo 1
+                &kp A   &kp B   &kp C
+                &kp D   &kp E   &kp F
+            >;
+        };
+        bt_layer {
+            display-name = "Bluetooth";
+            bindings = <
+                &none           &none           &trans
+                &none 0         &bootloader     &bt BT_CLR
+                &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 2
             >;
         };
     };
