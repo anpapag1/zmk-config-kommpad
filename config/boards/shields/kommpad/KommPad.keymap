@@ -16,15 +16,29 @@
             display-name = "Default Layer";
             bindings = <
                 &kp X  
+                &kp Y  
                 &to 1   
             >;
         };
-        bt_layer {
-            display-name = "Bluetooth";
+        settings_layer {
+            display-name = "Settings";
             bindings = <
-                &kp Y       
+                &bootloader       
+                &studio_unlock       
                 &to 0
             >;
+        };
+        extra_layer_2 {
+            status = "reserved";
+        };
+        extra_layer_3 {
+            status = "reserved";
+        };
+        extra_layer_4 {
+            status = "reserved";
+        };
+        extra_layer_5 {
+            status = "reserved";
         };
     };
 };
