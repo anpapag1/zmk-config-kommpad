@@ -3,4 +3,17 @@ if SHIELD_KOMMPAD
 config ZMK_KEYBOARD_NAME
     default "KommPad"
 
+if ZMK_STUDIO
+
+config ZMK_STUDIO_METADATA_AUTHOR
+    default "anpapag1"
+
+config ZMK_STUDIO_METADATA_NAME
+    default "KommPad"
+
+config ZMK_STUDIO_METADATA_URL
+    default "https://github.com/anpapag1/zmk-config-kommpad"
+
+endif # ZMK_STUDIO
+
 endif
