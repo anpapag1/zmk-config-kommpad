@@ -1,0 +1,9 @@
+file_format: "1"
+id: KommPad
+name: KommPad
+type: shield
+url: https://github.com/anpapag1/zmk-config-kommpad
+requires: [pro_micro]
+features:
+  - keys
+  - studio
